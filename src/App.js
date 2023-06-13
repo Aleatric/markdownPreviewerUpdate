@@ -116,48 +116,72 @@ These are just a few practical examples to demonstrate the usage of Markdown. Yo
       overflow: "auto",
     };
 
+    const buttonStyle = {
+      backgroundColor: "black",
+      fontFamily: "'Courier Prime', monospace",
+      color: "#A87D19",
+      marginTop: "1rem",
+    };
+
+    const containerStyle = {
+      backgroundColor: "black",
+      fontFamily: "'Courier Prime', monospace",
+      color: "#A87D19",
+      display: "flex",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+      alignItems: "flex-start",
+      height: "50vh",
+      padding: "1rem",
+      boxSizing: "border-box",
+    };
+
+    const headerStyle = {
+      textAlign: "center",
+      marginTop: "0.5rem",
+    };
+
     return (
-      <div style={{ backgroundColor: "black", fontFamily: "'Courier Prime', monospace", color: "#A87D19" }}>
-        <div className="App">
-          <div className="container">
-            <div className="row mt-4">
-              <div className="col text-center">
-                <h1>Markdown Previewer</h1>
-                <button style={{ backgroundColor: "black", color: "#A87D19", fontFamily: "'Courier Prime', monospace", marginTop: "2rem" }} onClick={() => this.resetMarkdown()}>Reset</button>
-              </div>
-            </div>
-
-            <div className="row mt-4">
-              <div className="col-md-6">
-                <div className="col text-center">
-                  <h4>Markdown Input</h4>
-                </div>
-                <textarea
-                  id="editor"
-                  className="input"
-                  style={inputStyle}
-                  value={this.state.markdown}
-                  onChange={(e) => {
-                    this.updateMarkdown(e.target.value);
-                  }}
-                />
-              </div>
-
-              <div className="col-md-6">
-                <div className="col text-center">
-                  <h4>Preview</h4>
-                </div>
-                <div
-                  id="preview"
-                  style={outputStyle}
-                  dangerouslySetInnerHTML={{
-                    __html: marked(this.state.markdown, { renderer: new Renderer() }),
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+       <div style={containerStyle}>
+      <div style={{ width: "100%", textAlign: "center" }}>
+        <div style={headerStyle}>
+          <h1>Markdown Previewer</h1>
         </div>
+        <button style={buttonStyle} onClick={() => this.resetMarkdown()}>
+          Reset
+        </button>
+      </div>
+      
+      <div style={containerStyle}>
+        <div style={{ width: "40%", paddingLeft: "3rem" }}>
+          <div style={headerStyle}>
+            <h1>Markdown Input</h1>
+          </div>
+          <textarea
+            id="editor"
+            className="input"
+            style={inputStyle}
+            value={this.state.markdown}
+            onChange={(e) => {
+              this.updateMarkdown(e.target.value);
+            }}
+          />
+        </div>
+  
+        <div style={{ width: "40%", paddingRight:"6rem" }}>
+          <div style={headerStyle}>
+            <h1>Preview</h1>
+          </div>
+          <div
+            id="preview"
+            className="output"
+            style={outputStyle}
+            dangerouslySetInnerHTML={{
+              __html: marked(this.state.markdown, { renderer: new Renderer() }),
+            }}
+          />
+        </div>
+      </div>
       </div>
     );
   }
