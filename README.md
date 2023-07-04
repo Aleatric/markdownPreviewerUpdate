@@ -8,7 +8,7 @@ The Markdown Previewer is a React-based web application that allows you to write
 - Inline CSS Styling: The project is styled using entirely inline CSS, showcasing the flexibility and power of inline styles within the React framework.
 
 ## Technologies Used
-- React: The web application is built using React, a popular JavaScript library for building user interfaces.
+- React
 - marked: The marked library is used for parsing and rendering the Markdown syntax.
 
 ## Usage
