@@ -1,71 +1,22 @@
-# Getting Started with Create React App
+## Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Markdown Previewer is a React-based web application that allows you to write and preview Markdown syntax in real time. It provides a convenient way to visualize how your Markdown content will be rendered. The application is themed to resemble the credits of the popular game "Portal."
 
-## Available Scripts
+# Features
+- Live Markdown Preview: As you type in the Markdown input area, the preview section updates in real time to display the rendered Markdown.
+- Reset Functionality: Clicking the "Reset" button clears the Markdown input and resets the preview to the initial content.
 
-In the project directory, you can run:
+# Technologies Used
+- React: The web application is built using React, a popular JavaScript library for building user interfaces.
+- marked: The marked library is used for parsing and rendering the Markdown syntax.
 
-### `npm start`
+# Usage
+- In the Markdown input area, enter your Markdown content. As you type, the preview section will update automatically to display the rendered Markdown.
+- To reset the input and preview, click the "Reset" button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Theme: Portal Credits
+The application is styled to resemble the credits sequence of the game "Portal." The black background, monospace font, and color scheme were inspired by the distinctive visual style of the credits. This theme adds a unique and immersive touch to the Markdown Previewer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# markdownPreviewer
+# Future Developments
+- Add support for additional Markdown features such as tables, task lists, and footnotes.
+- Implement a file upload feature to allow users to preview Markdown content from a file.
