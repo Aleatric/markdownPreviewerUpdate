@@ -5,6 +5,7 @@ The Markdown Previewer is a React-based web application that allows you to write
 ## Features
 - Live Markdown Preview: As you type in the Markdown input area, the preview section updates in real time to display the rendered Markdown.
 - Reset Functionality: Clicking the "Reset" button clears the Markdown input and resets the preview to the initial content.
+- Inline CSS Styling: The project is styled using entirely inline CSS, showcasing the flexibility and power of inline styles within the React framework.
 
 ## Technologies Used
 - React: The web application is built using React, a popular JavaScript library for building user interfaces.
